@@ -47,7 +47,7 @@ try {
 
     // 2. Run Seeders
     echo "Running Initial Seeder...\n";
-    $seeder = Services::seeder();
+    $seeder = new \CodeIgniter\Database\Seeder(new \Config\Database());
     $seeder->call('App\Database\Seeds\InitialSeeder');
     echo "Success: Database seeded with initial data.\n";
 
