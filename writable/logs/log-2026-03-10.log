@@ -1,0 +1,457 @@
+DEBUG - 2026-03-10 05:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-10 05:09:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-10 05:09:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-10 05:09:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-10 05:10:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-10 05:10:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-10 05:14:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-03-10 05:30:42 --> Unknown column 'image_url' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `testimonials` (`client_name`, `content`, `image_url`)
+VALUES (\'Sarah Johnson\',\'Lograva transformed our vision into a breathtaking cinematic experience. Their attention to detail is unmatched.\',\'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop\'), (\'David Chen\',\'The most professional studio we have ever worked with. They truly understand the art of storytelling.\',\'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `testimonials` (`client_name`, `content`, `image_url`)
+VALUES (\'Sarah Johnson\',\'Lograva transformed our vision into a breathtaking cinematic experience. Their attention to detail is unmatched.\',\'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop\'), (\'David Chen\',\'The most professional studio we have ever worked with. They truly understand the art of storytelling.\',\'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `testimonials` (`client_name`, `content`, `image_url`)
+VALUES (\'Sarah Johnson\',\'Lograva transformed our vision into a breathtaking cinematic experience. Their attention to detail is unmatched.\',\'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop\'), (\'David Chen\',\'The most professional studio we have ever worked with. They truly understand the art of storytelling.\',\'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1841): CodeIgniter\Database\BaseConnection->query('INSERT INTO `testimonials` (`client_name`, `content`, `image_url`)
+VALUES (\'Sarah Johnson\',\'Lograva transformed our vision into a breathtaking cinematic experience. Their attention to detail is unmatched.\',\'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop\'), (\'David Chen\',\'The most professional studio we have ever worked with. They truly understand the art of storytelling.\',\'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2230): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH\Database\Seeds\InitialSeeder.php(87): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 SYSTEMPATH\Database\Seeder.php(155): App\Database\Seeds\InitialSeeder->run()
+ 8 SYSTEMPATH\Commands\Database\Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Seeds\\InitialSeeder')
+ 9 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\Seed->run([])
+10 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', [...])
+11 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
+12 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+13 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2026-03-10 05:30:43 --> ErrorException: Undefined variable $services
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 72.
+ 1 APPPATH\Views\home.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $services', 'E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php', 72)
+ 2 SYSTEMPATH\View\View.php(238): include('E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-10 05:30:47 --> ErrorException: Undefined variable $services
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 72.
+ 1 APPPATH\Views\home.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $services', 'E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php', 72)
+ 2 SYSTEMPATH\View\View.php(238): include('E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-10 05:30:51 --> ErrorException: Undefined variable $services
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 72.
+ 1 APPPATH\Views\home.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $services', 'E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php', 72)
+ 2 SYSTEMPATH\View\View.php(238): include('E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-10 05:31:02 --> ErrorException: Undefined variable $services
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 72.
+ 1 APPPATH\Views\home.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $services', 'E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php', 72)
+ 2 SYSTEMPATH\View\View.php(238): include('E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-10 05:31:03 --> ErrorException: Undefined variable $services
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 72.
+ 1 APPPATH\Views\home.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $services', 'E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php', 72)
+ 2 SYSTEMPATH\View\View.php(238): include('E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-10 05:31:03 --> ErrorException: Undefined variable $services
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 72.
+ 1 APPPATH\Views\home.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $services', 'E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php', 72)
+ 2 SYSTEMPATH\View\View.php(238): include('E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-10 05:31:03 --> ErrorException: Undefined variable $services
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 72.
+ 1 APPPATH\Views\home.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $services', 'E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php', 72)
+ 2 SYSTEMPATH\View\View.php(238): include('E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-10 05:31:11 --> ErrorException: Undefined variable $services
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 72.
+ 1 APPPATH\Views\home.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $services', 'E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php', 72)
+ 2 SYSTEMPATH\View\View.php(238): include('E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-10 05:31:12 --> ErrorException: Undefined variable $services
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 72.
+ 1 APPPATH\Views\home.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $services', 'E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php', 72)
+ 2 SYSTEMPATH\View\View.php(238): include('E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-10 05:31:12 --> ErrorException: Undefined variable $services
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 72.
+ 1 APPPATH\Views\home.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $services', 'E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php', 72)
+ 2 SYSTEMPATH\View\View.php(238): include('E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-10 05:31:13 --> ErrorException: Undefined variable $services
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 72.
+ 1 APPPATH\Views\home.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $services', 'E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php', 72)
+ 2 SYSTEMPATH\View\View.php(238): include('E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-10 05:31:15 --> ErrorException: Undefined variable $services
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 72.
+ 1 APPPATH\Views\home.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $services', 'E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php', 72)
+ 2 SYSTEMPATH\View\View.php(238): include('E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-10 05:31:16 --> ErrorException: Undefined variable $services
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 72.
+ 1 APPPATH\Views\home.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $services', 'E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php', 72)
+ 2 SYSTEMPATH\View\View.php(238): include('E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-10 05:31:16 --> ErrorException: Undefined variable $services
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 72.
+ 1 APPPATH\Views\home.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $services', 'E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php', 72)
+ 2 SYSTEMPATH\View\View.php(238): include('E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-10 05:31:17 --> ErrorException: Undefined variable $services
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 72.
+ 1 APPPATH\Views\home.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $services', 'E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php', 72)
+ 2 SYSTEMPATH\View\View.php(238): include('E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-10 05:31:17 --> ErrorException: Undefined variable $services
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 72.
+ 1 APPPATH\Views\home.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $services', 'E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php', 72)
+ 2 SYSTEMPATH\View\View.php(238): include('E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-10 05:31:17 --> ErrorException: Undefined variable $services
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 72.
+ 1 APPPATH\Views\home.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $services', 'E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php', 72)
+ 2 SYSTEMPATH\View\View.php(238): include('E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-10 05:31:18 --> ErrorException: Undefined variable $services
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 72.
+ 1 APPPATH\Views\home.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $services', 'E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php', 72)
+ 2 SYSTEMPATH\View\View.php(238): include('E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-10 05:31:18 --> ErrorException: Undefined variable $services
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 72.
+ 1 APPPATH\Views\home.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $services', 'E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php', 72)
+ 2 SYSTEMPATH\View\View.php(238): include('E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-10 05:31:18 --> ErrorException: Undefined variable $services
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 72.
+ 1 APPPATH\Views\home.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $services', 'E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php', 72)
+ 2 SYSTEMPATH\View\View.php(238): include('E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-10 05:31:19 --> ErrorException: Undefined variable $services
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 72.
+ 1 APPPATH\Views\home.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $services', 'E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php', 72)
+ 2 SYSTEMPATH\View\View.php(238): include('E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-10 05:31:19 --> ErrorException: Undefined variable $services
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 72.
+ 1 APPPATH\Views\home.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $services', 'E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php', 72)
+ 2 SYSTEMPATH\View\View.php(238): include('E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-10 05:31:20 --> ErrorException: Undefined variable $services
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 72.
+ 1 APPPATH\Views\home.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $services', 'E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php', 72)
+ 2 SYSTEMPATH\View\View.php(238): include('E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-10 05:31:23 --> ErrorException: Undefined variable $services
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 72.
+ 1 APPPATH\Views\home.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $services', 'E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php', 72)
+ 2 SYSTEMPATH\View\View.php(238): include('E:\\Repos\\studio\\codeigniter-app\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-03-10 05:44:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-10 05:44:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-10 05:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-10 05:44:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-10 05:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-10 05:44:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-10 05:44:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-10 05:44:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-10 05:45:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-10 05:45:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-10 05:50:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-10 05:50:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-10 05:50:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-03-10 05:53:41 --> Column count doesn't match value count at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `projects` ()
+VALUES (\'FILMS\',\'2026-03-10 05:53:41\',\'A cinematic exploration of the northern lights and the silence of the Arctic.\',1,1,\'https://images.unsplash.com/photo-1531366930477-4f85e80ad90a?q=80&w=2070&auto=format&fit=crop\',\'AURORA BOREALIS\',\'https://assets.mixkit.co/videos/preview/mixkit-stars-in-the-night-sky-slow-motion-26852-large.mp4\'), ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `projects` ()
+VALUES (\'FILMS\',\'2026-03-10 05:53:41\',\'A cinematic exploration of the northern lights and the silence of the Arctic.\',1,1,\'https://images.unsplash.com/photo-1531366930477-4f85e80ad90a?q=80&w=2070&auto=format&fit=crop\',\'AURORA BOREALIS\',\'https://assets.mixkit.co/videos/preview/mixkit-stars-in-the-night-sky-slow-motion-26852-large.mp4\'), ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `projects` ()
+VALUES (\'FILMS\',\'2026-03-10 05:53:41\',\'A cinematic exploration of the northern lights and the silence of the Arctic.\',1,1,\'https://images.unsplash.com/photo-1531366930477-4f85e80ad90a?q=80&w=2070&auto=format&fit=crop\',\'AURORA BOREALIS\',\'https://assets.mixkit.co/videos/preview/mixkit-stars-in-the-night-sky-slow-motion-26852-large.mp4\'), ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1841): CodeIgniter\Database\BaseConnection->query('INSERT INTO `projects` ()
+VALUES (\'FILMS\',\'2026-03-10 05:53:41\',\'A cinematic exploration of the northern lights and the silence of the Arctic.\',1,1,\'https://images.unsplash.com/photo-1531366930477-4f85e80ad90a?q=80&w=2070&auto=format&fit=crop\',\'AURORA BOREALIS\',\'https://assets.mixkit.co/videos/preview/mixkit-stars-in-the-night-sky-slow-motion-26852-large.mp4\'), ()', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2230): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH\Database\Seeds\InitialSeeder.php(68): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 SYSTEMPATH\Database\Seeder.php(155): App\Database\Seeds\InitialSeeder->run()
+ 8 SYSTEMPATH\Commands\Database\Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Seeds\\InitialSeeder')
+ 9 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\Seed->run([])
+10 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', [...])
+11 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
+12 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+13 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+DEBUG - 2026-03-10 05:54:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-10 05:54:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-10 05:54:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-10 05:54:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-10 05:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-10 05:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-10 05:54:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-10 05:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-03-10 05:54:59 --> ErrorException: filter_var(): Unknown filter with ID 0
+[Method: POST, Route: admin/projects/update/15]
+in SYSTEMPATH\HTTP\RequestTrait.php on line 341.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filter_var(): Unknown filter with ID 0', 'E:\\Repos\\studio\\codeigniter-app\\vendor\\codeigniter4\\framework\\system\\HTTP\\RequestTrait.php', 341)
+ 2 SYSTEMPATH\HTTP\RequestTrait.php(341): filter_var('1', 0, 0)
+ 3 SYSTEMPATH\HTTP\IncomingRequest.php(583): CodeIgniter\HTTP\Request->fetchGlobal('post', 'sort_order', 0, 0)
+ 4 APPPATH\Controllers\Admin\Projects.php(54): CodeIgniter\HTTP\IncomingRequest->getPost('sort_order', 0)
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin\Projects->update('15')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Projects))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-03-10 05:55:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-10 05:56:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-10 05:56:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-03-10 05:56:09 --> ErrorException: filter_var(): Unknown filter with ID 0
+[Method: POST, Route: admin/projects/update/11]
+in SYSTEMPATH\HTTP\RequestTrait.php on line 341.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filter_var(): Unknown filter with ID 0', 'E:\\Repos\\studio\\codeigniter-app\\vendor\\codeigniter4\\framework\\system\\HTTP\\RequestTrait.php', 341)
+ 2 SYSTEMPATH\HTTP\RequestTrait.php(341): filter_var('1', 0, 0)
+ 3 SYSTEMPATH\HTTP\IncomingRequest.php(583): CodeIgniter\HTTP\Request->fetchGlobal('post', 'sort_order', 0, 0)
+ 4 APPPATH\Controllers\Admin\Projects.php(54): CodeIgniter\HTTP\IncomingRequest->getPost('sort_order', 0)
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Admin\Projects->update('11')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Projects))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-03-10 07:17:52 --> CodeIgniter\Exceptions\RuntimeException: CodeIgniter\HTTP\CLIRequest needs to run from the command line.
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\CLIRequest.php on line 69.
+ 1 SYSTEMPATH\Config\Services.php(148): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 2 SYSTEMPATH\Config\BaseService.php(325): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 3 SYSTEMPATH\Config\BaseService.php(264): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 4 SYSTEMPATH\Config\Services.php(143): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 5 SYSTEMPATH\Config\BaseService.php(334): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+ 6 SYSTEMPATH\Config\Services.php(541): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 7 SYSTEMPATH\Config\BaseService.php(334): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+ 8 SYSTEMPATH\Boot.php(136): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+ 9 FCPATH\patch.php(34): CodeIgniter\Boot::bootConsole(Object(Config\Paths))
+CRITICAL - 2026-03-10 07:18:19 --> CodeIgniter\Exceptions\RuntimeException: CodeIgniter\HTTP\CLIRequest needs to run from the command line.
+[Method: GET, Route: /]
+in SYSTEMPATH\HTTP\CLIRequest.php on line 69.
+ 1 SYSTEMPATH\Config\Services.php(148): CodeIgniter\HTTP\CLIRequest->__construct(Object(Config\App))
+ 2 SYSTEMPATH\Config\BaseService.php(325): CodeIgniter\Config\Services::clirequest(Object(Config\App), false)
+ 3 SYSTEMPATH\Config\BaseService.php(264): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 4 SYSTEMPATH\Config\Services.php(143): CodeIgniter\Config\BaseService::getSharedInstance('clirequest', Object(Config\App))
+ 5 SYSTEMPATH\Config\BaseService.php(334): CodeIgniter\Config\Services::clirequest(Object(Config\App))
+ 6 SYSTEMPATH\Config\Services.php(541): CodeIgniter\Config\BaseService::__callStatic('clirequest', [...])
+ 7 SYSTEMPATH\Config\BaseService.php(334): CodeIgniter\Config\Services::createRequest(Object(Config\App), true)
+ 8 SYSTEMPATH\Boot.php(136): CodeIgniter\Config\BaseService::__callStatic('createRequest', [...])
+ 9 FCPATH\patch.php(34): CodeIgniter\Boot::bootConsole(Object(Config\Paths))
+DEBUG - 2026-03-10 06:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-03-10 06:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
