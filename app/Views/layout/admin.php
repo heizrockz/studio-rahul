@@ -11,14 +11,17 @@
         <!-- Sidebar -->
         <div class="w-64 bg-gray-900 text-white flex-shrink-0">
             <div class="p-6">
-                <h1 class="text-xl font-bold tracking-tighter">AMBER ADMIN</h1>
+                <h1 class="text-xl font-bold tracking-tighter">LOGRAVA ADMIN</h1>
             </div>
             <nav class="mt-6">
-                <a href="/admin/projects" class="flex items-center px-6 py-3 bg-gray-800 text-white">
+                <a href="/admin/projects" class="flex items-center px-6 py-3 hover:bg-gray-800 transition-colors">
                     <span class="text-sm font-medium">Projects</span>
                 </a>
-                <a href="/admin/settings" class="flex items-center px-6 py-3 text-gray-400 hover:bg-gray-800 hover:text-white transition-colors">
-                    <span class="text-sm font-medium">Settings</span>
+                <a href="/admin/services" class="flex items-center px-6 py-3 hover:bg-gray-800 transition-colors">
+                    <span class="text-sm font-medium">Services</span>
+                </a>
+                <a href="/admin/testimonials" class="flex items-center px-6 py-3 hover:bg-gray-800 transition-colors">
+                    <span class="text-sm font-medium">Testimonials</span>
                 </a>
                 <a href="/admin/logout" class="flex items-center px-6 py-3 text-red-400 hover:bg-gray-800 transition-colors mt-auto">
                     <span class="text-sm font-medium">Logout</span>

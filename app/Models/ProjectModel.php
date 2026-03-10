@@ -12,7 +12,7 @@ class ProjectModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['title', 'category', 'thumbnail', 'video_url', 'description', 'sort_order'];
+    protected $allowedFields    = ['title', 'category', 'is_featured', 'thumbnail', 'video_url', 'description', 'sort_order'];
 
     // Dates
     protected $useTimestamps = true;

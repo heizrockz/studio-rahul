@@ -10,7 +10,7 @@ class Auth extends BaseController
     public function login()
     {
         if (session()->get('isLoggedIn')) {
-            return redirect()->to('/admin/dashboard');
+            return redirect()->to('/admin/projects');
         }
         return view('admin/login');
     }
@@ -29,7 +29,7 @@ class Auth extends BaseController
                 'username'   => $admin['username'],
                 'isLoggedIn' => true,
             ]);
-            return redirect()->to('/admin/dashboard');
+            return redirect()->to('/admin/projects');
         }
 
         return redirect()->back()->with('error', 'Invalid username or password');

@@ -27,9 +27,19 @@
                            class="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black/5 focus:border-black transition-all">
                 </div>
             </div>
+            <div class="flex items-center space-x-3 bg-gray-50 p-4 rounded-lg border border-gray-100">
+                <input type="checkbox" name="is_featured" id="is_featured" value="1" checked
+                       class="w-5 h-5 rounded border-gray-300 text-black focus:ring-black">
+                <label for="is_featured" class="text-sm font-medium text-gray-700 uppercase tracking-widest">Show on Homepage</label>
+            </div>
             <div>
                 <label class="block text-sm font-medium text-gray-700 mb-2">Thumbnail URL</label>
                 <input type="text" name="thumbnail" required placeholder="https://unsplash.com/..."
+                       class="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black/5 focus:border-black transition-all">
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">Video URL (Optional)</label>
+                <input type="text" name="video_url" placeholder="https://..."
                        class="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black/5 focus:border-black transition-all">
             </div>
             <div>

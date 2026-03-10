@@ -8,7 +8,7 @@
 </head>
 <body class="bg-gray-900 text-white flex items-center justify-center h-screen">
     <div class="bg-gray-800 p-10 rounded-xl shadow-2xl w-full max-w-md border border-gray-700">
-        <h1 class="text-3xl font-bold mb-8 text-center tracking-tighter">AMBER ADMIN</h1>
+        <h1 class="text-3xl font-bold mb-8 text-center tracking-tighter">LOGRAVA ADMIN</h1>
         
         <?php if (session()->getFlashdata('error')): ?>
             <div class="bg-red-500/10 border border-red-500 text-red-500 p-4 rounded mb-6 text-sm">

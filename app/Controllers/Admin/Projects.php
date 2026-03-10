@@ -24,10 +24,11 @@ class Projects extends BaseController
         $data = [
             'title'       => $this->request->getPost('title'),
             'category'    => $this->request->getPost('category'),
+            'is_featured' => $this->request->getPost('is_featured') ? 1 : 0,
             'thumbnail'   => $this->request->getPost('thumbnail'),
             'video_url'   => $this->request->getPost('video_url'),
             'description' => $this->request->getPost('description'),
-            'sort_order'  => $this->request->getPost('sort_order'),
+            'sort_order'  => (int)($this->request->getPost('sort_order') ?? 0),
         ];
         $model->save($data);
         return redirect()->to('/admin/projects')->with('success', 'Project created successfully');
@@ -43,16 +44,15 @@ class Projects extends BaseController
     public function update($id)
     {
         $model = new ProjectModel();
-        $data = [
-            'id'          => $id,
+        $model->update($id, [
             'title'       => $this->request->getPost('title'),
             'category'    => $this->request->getPost('category'),
+            'is_featured' => $this->request->getPost('is_featured') ? 1 : 0,
             'thumbnail'   => $this->request->getPost('thumbnail'),
             'video_url'   => $this->request->getPost('video_url'),
             'description' => $this->request->getPost('description'),
-            'sort_order'  => $this->request->getPost('sort_order'),
-        ];
-        $model->save($data);
+            'sort_order'  => (int)($this->request->getPost('sort_order') ?? 0),
+        ]);
         return redirect()->to('/admin/projects')->with('success', 'Project updated successfully');
     }
 
