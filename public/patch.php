@@ -29,6 +29,18 @@ use Config\Services;
 $app = Boot::bootWorker($paths);
 
 echo "<h1>Lograva Studio DB Patch</h1>";
+
+// --- System Check ---
+echo "<h3>System Check</h3>";
+echo "<pre>";
+echo "PHP Version: " . PHP_VERSION . "\n";
+echo "Intl Extension: " . (extension_loaded('intl') ? 'Loaded' : 'MISSING (Required)') . "\n";
+echo "MBString Extension: " . (extension_loaded('mbstring') ? 'Loaded' : 'MISSING (Required)') . "\n";
+echo "MySQLi Extension: " . (extension_loaded('mysqli') ? 'Loaded' : 'MISSING') . "\n";
+echo "Writable Directory: " . (is_writable(APPPATH . 'Writable') ? 'Writable' : 'NOT WRITABLE') . "\n";
+echo "</pre>";
+echo "<hr>";
+
 echo "<pre>";
 
 try {
