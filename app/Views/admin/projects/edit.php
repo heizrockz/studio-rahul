@@ -1,0 +1,49 @@
+<?= $this->extend('layout/admin') ?>
+
+<?= $this->section('content') ?>
+<div class="max-w-3xl mx-auto">
+    <div class="flex justify-between items-center mb-10">
+        <h1 class="text-3xl font-bold text-gray-900">Edit Project</h1>
+        <a href="/admin/projects" class="text-sm font-medium text-gray-500 hover:text-black transition-colors">Back to Projects</a>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-8">
+        <form action="/admin/projects/update/<?= $project['id'] ?>" method="POST" class="space-y-6">
+            <?= csrf_field() ?>
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">Project Title</label>
+                <input type="text" name="title" value="<?= $project['title'] ?>" required
+                       class="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black/5 focus:border-black transition-all">
+            </div>
+            <div class="grid grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Category</label>
+                    <input type="text" name="category" value="<?= $project['category'] ?>" required
+                           class="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black/5 focus:border-black transition-all">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Sort Order</label>
+                    <input type="number" name="sort_order" value="<?= $project['sort_order'] ?>"
+                           class="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black/5 focus:border-black transition-all">
+                </div>
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">Thumbnail URL</label>
+                <input type="text" name="thumbnail" value="<?= $project['thumbnail'] ?>" required
+                       class="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black/5 focus:border-black transition-all">
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">Description</label>
+                <textarea name="description" rows="4" 
+                          class="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-black/5 focus:border-black transition-all"><?= $project['description'] ?></textarea>
+            </div>
+            <div class="pt-6">
+                <button type="submit" 
+                        class="w-full bg-black text-white font-bold py-4 rounded-lg hover:bg-gray-800 transition-colors uppercase tracking-widest text-xs">
+                    Update Project
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+<?= $this->endSection() ?>
